@@ -7,6 +7,7 @@ header{
   position: absolute;
   width: 100%;
   height: 530px;
+  top: 0;
   color: #fff;
   background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
@@ -128,6 +129,11 @@ header{
 
 .big_search_button:active{
   background: #329400;
+}
+
+#main{
+  position: relative;
+  top: 530px;
 }
 
 @media only screen and (max-width: 600px) {
