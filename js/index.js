@@ -6,12 +6,12 @@ $(document).ready(function(){
     "img/3.jpg"
   );
   var num_h = 0;
-  // setInterval(function(){
-  //   if(num_h == img_h.length - 1){
-  //     num_h = 0;
-  //   }else{
-  //     num_h += 1;
-  //   }
-  //   $('#head').css('backgroundImage', 'url(' + img_h[num_h] + ')');
-  // }, 15000);
+  setInterval(function(){
+    if(num_h == img_h.length - 1){
+      num_h = 0;
+    }else{
+      num_h += 1;
+    }
+    $('#head').css('backgroundImage', 'url(' + img_h[num_h] + ')');
+  }, 15000);
 });

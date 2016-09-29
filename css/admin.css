@@ -71,6 +71,7 @@ button {
   background: #e74c3c;
   border-radius:7px;
   outline: 0;
+  cursor: pointer;
 }
 
 .icon_input{
