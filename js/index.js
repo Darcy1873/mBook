@@ -14,4 +14,7 @@ $(document).ready(function(){
     }
     $('#head').css('backgroundImage', 'url(' + img_h[num_h] + ')');
   }, 15000);
+
+  var clientHeight = getHeight();
+  $('#head').css('height', clientHeight);
 });

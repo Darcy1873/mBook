@@ -1,12 +1,10 @@
 
-.right{
-  float: right;
+a{
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .hide-on-small-only, .hide-on-small-and-down {
-    display: none !important;
-  }
+.right{
+  float: right;
 }
 
 @media only screen and (max-width: 992px) {

@@ -10,3 +10,8 @@ $('.pwd').focusin(function(){
 }).focusout(function(){
   $('.icon_pwd').css('color', 'white');
 });
+
+$(document).ready(function(){
+  var clientHeight = getHeight() - 75;
+  $('footer').css('top', clientHeight);
+});

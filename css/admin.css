@@ -8,11 +8,12 @@ input:after {
 }
 
 body {
+  height: 100%;
   background: #272125;
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2{
+h1, h2, footer{
   color:rgba(255,255,255,.8);
 }
 
@@ -78,15 +79,64 @@ button {
   margin-bottom: 4px;
   vertical-align: middle;
 }
+
 .icon_user{
   position:absolute;
   top:68px;
   right: 80px;
   color:white;
 }
+
 .icon_pwd{
   position:absolute;
   top:136px;
   right: 80px;
   color:white;
+}
+
+footer{
+  position: absolute;
+  width: 360px;
+  top: 0;
+  left: 50%;
+  margin-left: -180px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    margin-top: 80px;
+    font-size: 3.4em;
+  }
+  footer{
+    width: 230px;
+    margin-left: -115px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  form{
+    width: 320px;
+  }
+
+  input{
+    width: 220px;
+  }
+
+  .icon_user{
+    right: 96px;
+  }
+
+  .icon_pwd{
+    right: 96px;
+  }
+
+  button{
+    margin-right: 20px;
+  }
+
+  footer{
+    position: static;
+    margin: 180px auto 50px;
+  }
 }
