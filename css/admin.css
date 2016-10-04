@@ -8,7 +8,6 @@ input:after {
 }
 
 body {
-  height: 100%;
   background: #272125;
   font-family: 'Roboto', sans-serif;
 }
@@ -97,7 +96,6 @@ button {
 footer{
   position: absolute;
   width: 360px;
-  top: 0;
   left: 50%;
   margin-left: -180px;
   text-align: center;

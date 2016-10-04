@@ -15,6 +15,15 @@ $(document).ready(function(){
     $('#head').css('backgroundImage', 'url(' + img_h[num_h] + ')');
   }, 15000);
 
-  var clientHeight = getHeight();
+  var clientHeight = getClientHeight();
   $('#head').css('height', clientHeight);
+
+  $(".menu").click(function(){
+    $('.menu_nav').addClass('menu_nav_active');
+    $('.overlay_full').fadeIn();
+  });
+  $(".overlay_full").click(function(){
+    $('.menu_nav').removeClass('menu_nav_active');
+    $(this).fadeOut();
+  });
 });

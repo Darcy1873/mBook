@@ -1,6 +1,11 @@
 
 a{
   text-decoration: none;
+  outline: none;
+}
+
+ul{
+  list-style: none;
 }
 
 .right{
