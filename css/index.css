@@ -120,7 +120,6 @@ a{
   line-height: 48px;
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.4);
-  outline: none;
   -webkit-transition: background 0.3s, box-shadow 0.3s;
   transition: background 0.3s, box-shadow 0.3s;
 }
@@ -147,7 +146,6 @@ a{
   border: 0;
   background: #fff;
   border-radius: 5px 0 0 5px;
-  outline: none;
 }
 
 .big_search:hover + .big_search_button,
@@ -176,12 +174,11 @@ a{
   border: 0;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  outline: none;
-  transition: background 2.0s linear;
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   -ms-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 
 .big_search_button:hover{

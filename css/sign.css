@@ -1,0 +1,117 @@
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.sign{
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title{
+  display: inline-block;
+  margin-top: 105px;
+  margin-bottom: 15px;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color: #616161;
+}
+
+.form-control, .btn{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: border-color .15s ease-in-out;
+  -moz-transition: border-color .15s ease-in-out;
+  -ms-transition: border-color .15s ease-in-out;
+  -o-transition: border-color .15s ease-in-out;
+  transition: border-color .15s ease-in-out;
+}
+
+.form-control::-moz-placeholder{
+  color:#bdbdbd;
+}
+
+.form-control:-ms-input-placeholder{
+  color:#bdbdbd;
+}
+
+.form-control::-webkit-input-placeholder{
+  color:#bdbdbd;
+}
+
+input[type='email'],
+input[type='password'],
+.btn{
+  margin-bottom: 25px;
+  padding: 12px;
+  height: auto;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+input[type='email']:focus{
+  border-color: #aaa;
+}
+
+.btn{
+  text-align: center;
+  color: #fff;
+  background: #3DA8F5;
+  border: 1px solid #3DA8F5;
+  cursor: pointer;
+}
+
+.icon{
+  visibility: hidden;
+  margin-left: 0;
+  margin-right: -10px;
+  line-height: 0;
+  vertical-align: middle;
+  -webkit-transition: margin-left 0.1s ease-in-out;
+  -moz-transition: margin-left 0.1s ease-in-out;
+  -ms-transition: margin-left 0.1s ease-in-out;
+  -o-transition: margin-left 0.1s ease-in-out;
+  transition: margin-left 0.1s ease-in-out;
+}
+
+.btn:hover .icon{
+  visibility: visible;
+  margin-left: 10px;
+}
+
+.login_action{
+  color: #A6A6A6;
+  letter-spacing: 1px;
+}
+.login_action:hover{
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+  .title{
+    margin-top: 85px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0;
+  }
+  .form-control, .btn{
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .form-control, .btn{
+    width: 86%;
+  }
+}
