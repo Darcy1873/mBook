@@ -1,14 +1,13 @@
 
 a{
   text-decoration: none;
-  outline: none;
 }
 
 ul{
   list-style: none;
 }
 
-input, button{
+a, input, button{
   outline: none;
 }
 
