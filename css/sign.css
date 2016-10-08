@@ -26,7 +26,7 @@ body{
   color: grey;
 }
 
-.form-control, .btn{
+.form-control, .btn, .btn_extra{
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -56,7 +56,8 @@ body{
 
 input[type='email'],
 input[type='password'],
-.btn{
+.btn,
+.btn_extra{
   margin-bottom: 25px;
   padding: 12px;
   height: auto;
@@ -85,16 +86,32 @@ input[type='password']:focus{
   color: #fff;
   background-color: #3DA8F5;
   border: 1px solid #3DA8F5;
+}
+
+.btn_extra{
+  color: #3DA8F5;
+  background-color: #FFF;
+  border: 1px solid #3DA8F5;
+}
+
+.btn,
+.btn_extra{
   cursor: pointer;
+}
+
+.btn_extra:hover{
+  color: #fff;
+  background-color: #3DA8F5;
+}
+
+.btn:hover,
+.btn_extra:hover{
+  padding-right: 30px;
   -webkit-transition: padding-right 0.218s ease;
   -moz-transition: padding-right 0.218s ease;
   -ms-transition: padding-right 0.218s ease;
   -o-transition: padding-right 0.218s ease;
   transition: padding-right 0.218s ease;
-}
-
-.btn:hover{
-  padding-right: 30px;
 }
 
 .icon{
@@ -110,7 +127,8 @@ input[type='password']:focus{
   transition: opacity 0.218s ease;
 }
 
-.btn:hover .icon{
+.btn:hover .icon,
+.btn_extra:hover .icon{
   opacity: 1;
 }
 
@@ -159,10 +177,18 @@ input[type='password']:focus{
   .form-control, .btn{
     width: 96%;
   }
+
+  .forget_pwd{
+    right: 1.8em;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .form-control, .btn{
     width: 86%;
+  }
+
+  .forget_pwd{
+    right: 2.8em;
   }
 }

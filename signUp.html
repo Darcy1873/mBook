@@ -14,11 +14,22 @@
 <body>
   <div class="sign">
     <a href="index.html" class="title"><h1>The Library</h1></a>
-    <form action="#" method="">
+    <form id="signUp_1" action="#" method="" style="display: none;">
       <input type="email" class="form-control" placeholder="Please input your email" autofocus="" required="" />
       <button type="submit" class="btn">Start now<i class="icon material-icons">trending_flat</i></button>
+      <a href="login.html" class="login_action">Already have an account ?</a>
     </form>
-    <a href="login.html" class="login_action">Already have an account ?</a>
+    <form id="signUp_2" action="#" method="">
+      <h4 class="form_title">exists</h4>
+      <input type="email" class="form-control" placeholder="Email / Username" required="" />
+      <div class="pwd">
+        <input type="password" class="form-control" placeholder="Password" autofocus="" required="" />
+        <a href="forget.html" class="forget_pwd">Forget ?</a>
+      </div>
+      <button type="submit" class="btn">Log in<i class="icon material-icons">trending_flat</i></button>
+      <div class="horizontal_line"></div>
+      <button type="submit" class="btn_extra">Log in<i class="icon material-icons">trending_flat</i></button>
+    </form>
   </div>
 
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
