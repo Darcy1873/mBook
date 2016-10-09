@@ -31,7 +31,9 @@ body{
   color: grey;
 }
 
-.form-control, .btn, .btn_extra{
+.form-control,
+.btn,
+.btn_extra{
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -68,6 +70,7 @@ body{
 }
 
 .form-error{
+  display: none;
   margin-top: -10px;
   margin-bottom: 25px;
   padding: 8px 15px;
@@ -119,6 +122,10 @@ input:focus{
   color: #3DA8F5;
   background-color: #FFF;
   border: 1px solid #3DA8F5;
+  -webkit-transition: background-color 0.218s ease;
+  -moz-transition: background-color 0.218s ease;
+  -ms-transition: background-color 0.218s ease;
+  -o-transition: background-color 0.218s ease;
   transition: background-color 0.218s ease;
 }
 
