@@ -4,6 +4,11 @@ body{
   font-size: 14px;
 }
 
+#signUp_2,
+#signUp_3{
+  display: none;
+}
+
 .sign{
   max-width: 340px;
   margin: 0 auto;
@@ -54,8 +59,27 @@ body{
   color:#bdbdbd;
 }
 
-input[type='email'],
-input[type='password'],
+.form-disable{
+  background-color: #eee;
+}
+
+.form-autofill{
+  background-color: #FAFFBD;
+}
+
+.form-error{
+  margin-top: -10px;
+  margin-bottom: 25px;
+  padding: 8px 15px;
+  width: 100%;
+  text-align: left;
+  color: #F74555;
+  background-color: #fff4f4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+input,
 .btn,
 .btn_extra{
   margin-bottom: 25px;
@@ -65,8 +89,11 @@ input[type='password'],
   line-height: 20px;
 }
 
-input[type='email']:focus,
-input[type='password']:focus{
+input{
+  background-color: #fff;
+}
+
+input:focus{
   border-color: #9a9a9a;
 }
 
@@ -92,11 +119,17 @@ input[type='password']:focus{
   color: #3DA8F5;
   background-color: #FFF;
   border: 1px solid #3DA8F5;
+  transition: background-color 0.218s ease;
 }
 
 .btn,
 .btn_extra{
   cursor: pointer;
+  -webkit-transition: padding-right 0.218s ease;
+  -moz-transition: padding-right 0.218s ease;
+  -ms-transition: padding-right 0.218s ease;
+  -o-transition: padding-right 0.218s ease;
+  transition: padding-right 0.218s ease;
 }
 
 .btn_extra:hover{
@@ -107,11 +140,6 @@ input[type='password']:focus{
 .btn:hover,
 .btn_extra:hover{
   padding-right: 30px;
-  -webkit-transition: padding-right 0.218s ease;
-  -moz-transition: padding-right 0.218s ease;
-  -ms-transition: padding-right 0.218s ease;
-  -o-transition: padding-right 0.218s ease;
-  transition: padding-right 0.218s ease;
 }
 
 .icon{

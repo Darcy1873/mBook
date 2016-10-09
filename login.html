@@ -14,18 +14,19 @@
 <body>
   <div class="sign">
     <a href="index.html" class="title"><h1>The Library</h1></a>
-    <form action="#" method="">
+    <form id="logIn" action="#" method="">
       <input type="email" class="form-control" placeholder="Email / Username" autofocus="" required="" />
       <div class="pwd">
         <input type="password" class="form-control" placeholder="Password" required="" />
         <a href="forget.html" class="forget_pwd">Forget ?</a>
       </div>
+      <div class="form-error">密码至少6位</div>
       <button type="submit" class="btn">Log in<i class="icon material-icons">trending_flat</i></button>
+      <a href="signUp.html" class="login_action">New to The Library ?</a>
     </form>
-    <a href="signUp.html" class="login_action">New to The Library ?</a>
   </div>
 
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <!-- <script type="text/javascript" src="js/sign.js"></script> -->
+  <script type="text/javascript" src="js/sign.js"></script>
 </body>
 </html>
